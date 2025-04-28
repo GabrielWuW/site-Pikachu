@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --secundary-color: #8E4106;
+}
+
+body {
+    background-color: #F5CF06;
+    font-family: "Righteous", sans-serif;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    gap: 3vh;
+    margin-left: 6vh;
+    margin-top: 6vh;
+    color: var(--secundary-color);
+    font-size: 32px;
+    font-weight: 400;
+    align-items: center;
+}
+
+header img {
+    width: 48px;
+    height: 48px;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+main img {
+    position: absolute;
+    bottom: 0;
+    width: 800px;
+}
+
+.frente {
+    font-size: 300px;
+    color: #FFFFFF;
+    position: absolute;
+}
+
+.transparente {
+    font-size: 30vh;
+    color: #FFFFFF;
+    opacity: 20%;
+    position: absolute;
+    top: 180px;
+}
+
+.game_infos {
+    color: var(--secundary-color);width: 50vh;
+}
+
+.game_infos span {
+    font-size: 64px;
+}
+
+.game_infos p {
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;justify-content: space-between;
+    z-index: 9999;
+    height: 100%;
+    padding-bottom: 5vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn_download {
+    width: 411px;
+    height: 100px;
+    background-color: var(--secundary-color);
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+}
+
+.btn_download :hover {
+    cursor: pointer;
+}
+
+footer{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: var(--secundary-color);
+}
+
+@media (max-width: 1392px) {
+    .transparente {
+        font-size: 25vh;
+    }
+
+    .frente {
+        font-size: 250px;
+    }
+
+    main img {
+        width: 700px;
+    }
+}
+
+@media (max-width: 1176px) {
+    .game_infos span {
+        font-size: 44px;
+    }
+
+    .game_infos p {
+        font-size: 17px;
+    }
+
+    .btn_download {
+        width: 311px;
+        font-size: 30px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 1118px) {
+    .transparente {
+        font-size: 20vh;
+        top: 220px;
+    }
+
+    .game_infos {
+        width: 40vh;
+    }
+
+    .frente {
+        font-size: 200px;
+    }
+
+    main img {
+        width: 700px;
+    }
+
+    .btn_download {
+        width: 211px;
+        height: 80px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 918px) {
+
+    header h1 {
+        font-size: 40px;
+    }
+    .transparente {
+        font-size: 17vh;
+        top: 270px;
+    }
+
+    .game_infos {
+        width: 30vh;
+    }
+
+    .game_infos span {
+        font-size: 34px;
+    }
+
+    .game_infos p {
+        font-size: 15px;
+    }
+
+    .frente {
+        font-size: 170px;
+    }
+
+    main img {
+        width: 600px;
+    }
+
+    .btn_download {
+        width: 151px;
+        height: 70px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    footer {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 3vh;
+    }
+
+    main img {
+        top: 250px;
+    }
+
+    .game_infos {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .game_infos p {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .game_infos span {
+        font-size: 64px;
+    }
+
+    .btn_download {
+        width: 411px;
+        height: 100px;font-size: 48px;
+    }
+
+    .transparente {
+        top: 0;
+        font-size: 16vh;
+    }
+
+    .frente {
+        top: 90px;
+    }
+}
+
+@media (max-width: 711px) {
+
+    footer {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 3vh;
+    }
+
+    main img {
+        top: 250px;
+    }
+
+    .game_infos {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .game_infos p {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .game_infos span {
+        font-size: 64px;
+    }
+
+    .btn_download {
+        width: 411px;
+        height: 100px;font-size: 48px;
+    }
+
+    .transparente {
+        top: 0;
+        font-size: 13vh;
+    }
+
+    .frente {
+        top: 60px;
+        font-size: 130px;
+    }
+}
